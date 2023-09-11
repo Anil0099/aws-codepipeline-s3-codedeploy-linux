@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('gitcheckout') {
+            steps {
+                echo 'I am Anil'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'This is my dashboard'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'hello jenkins'
+            }
+        }
+    }
+}
