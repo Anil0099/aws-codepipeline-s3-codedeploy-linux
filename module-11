@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('gitcheckout') {
+            steps {
+                echo 'Infosys'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'AWS'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'GCP'
+            }
+        }
+    }
+}
